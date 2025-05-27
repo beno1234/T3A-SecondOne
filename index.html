@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naso LP</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="relative h-screen overflow-hidden">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="assets/bg-lp.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo em background.
+      </video>
+
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+      <div
+        class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4"
+      >
+        <!-- Logo -->
+        <img src="assets/logo.svg" alt="Logo Naso" class="w-auto mb-4" />
+
+        <!-- Texto pequeno -->
+        <p class="uppercase text-sm tracking-widest mb-10 text-white">
+          Seu nariz tratado com excelência.
+        </p>
+
+        <!-- Título -->
+        <h1
+          class="text-4xl md:text-7xl font-light leading-tight mb-10 text-white bianca"
+        >
+          <span class="block">Função e Forma</span>
+          <span class="block">em Equilíbrio</span>
+        </h1>
+
+        <!-- Parágrafo -->
+        <p class="text-sm md:text-base max-w-2xl mb-6 text-[#FFF] inter">
+          Na Clínica NASO, oferecemos cuidados completos em otorrinolaringologia
+          e rinoplastia. Uma experiência médica que une ciência, estética e
+          resultados naturais.
+        </p>
+
+        <!-- Botão -->
+        <a
+          href="#avaliacao"
+          class="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition inter"
+        >
+          Agendar avaliação
+        </a>
+
+        <!-- Ícone rolar para baixo -->
+        <div class="mt-10 animate-bounce">
+          <a href="#conteudo">
+            <div
+              class="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-white py-16 px-6 md:px-20">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Imagem ou vídeo à esquerda -->
+        <div class="w-full h-full">
+          <img src="assets/image.png" alt="" />
+        </div>
+        <!-- Substitua por <img> ou vídeo se quiser -->
+
+        <!-- Conteúdo à direita -->
+        <div>
+          <h2
+            class="text-3xl md:text-6xl font-light leading-tight text-[#082F51] bianca"
+          >
+            <span class="block">ESPECIALISTAS</span>
+            <span class="block font-semibold">EM NARIZ.</span>
+          </h2>
+
+          <h3 class="mt-4 text-lg md:text-3xl font-medium text-[#082F51] inter">
+            REFERÊNCIA EM <span class="font-bold">PATOS DE MINAS.</span>
+          </h3>
+
+          <p class="mt-6 text-[#082F51] leading-relaxed inter">
+            A NASO é uma clínica dedicada exclusivamente ao nariz — sua
+            estrutura, sua função, sua estética.
+            <br /><br />
+            Unimos tecnologia, atendimento acolhedor e dois médicos
+            especialistas que tratam cada caso com precisão e escuta.
+            <br /><br />
+            Nossa missão é proporcionar bem-estar, respiração de qualidade e
+            resultados estéticos naturais, respeitando o que torna cada paciente
+            único.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cards abaixo -->
+      <div
+        class="mt-16 md:mt-48 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto"
+      >
+        <div class="border rounded-lg p-6 text-center md:text-left">
+          <p class="text-sm md:text-2xl font-semibold text-gray-400 mb-2 inter">
+            01.
+          </p>
+          <h4 class="text-lg font-semibold text-gray-800 inter">
+            Wide coverage area
+          </h4>
+          <p class="mt-2 text-sm md:text-base text-gray-600">
+            Charge your EV wherever you go with our extensive network
+          </p>
+        </div>
+
+        <div class="border rounded-lg p-6 text-center md:text-left">
+          <p class="text-sm md:text-2xl font-semibold text-gray-400 mb-2 inter">
+            02.
+          </p>
+          <h4 class="text-lg font-semibold text-gray-800 inter">
+            Fast charging speeds
+          </h4>
+          <p class="mt-2 text-sm md:text-base text-gray-600">
+            Get back on the road quickly with our ultra-fast chargers
+          </p>
+        </div>
+
+        <div class="border rounded-lg p-6 text-center md:text-left">
+          <p class="text-sm md:text-2xl font-semibold text-gray-400 mb-2 inter">
+            03.
+          </p>
+          <h4 class="text-lg font-semibold text-gray-800 inter">
+            Reliable & friendly
+          </h4>
+          <p class="mt-2 text-sm md:text-base text-gray-600">
+            Experience smooth and reliable charging every time
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="bg-gradient-to-b from-black to-[#0d1c2e] text-white">
+        <div class="mx-auto grid md:grid-cols-2 gap-10 items-center">
+          <!-- IMAGEM DO MÉDICO -->
+          <div
+            id="doctor-image"
+            class="w-full rounded-lg overflow-hidden relative"
+          >
+            <img
+              src="assets/lucas.png"
+              alt="Dr. Lucas"
+              class="w-full object-cover h-full rounded-lg transition-all duration-300"
+            />
+            <div
+              class="absolute bottom-0 left-0 w-full h-80 rounded-b-lg bg-gradient-to-t from-white/80 to-transparent backdrop-blur-sm pointer-events-none"
+            ></div>
+          </div>
+
+          <!-- INFORMAÇÕES -->
+          <div class="">
+            <h2
+              class="md:text-8xl font-light leading-snug bianca text-center text-5xl"
+            >
+              <span class="block">QUEM CUIDA</span>
+              <span class="block font-semibold">DE VOCÊ</span>
+            </h2>
+
+            <div
+              id="doctor-info"
+              class="mt-6 space-y-4 px-2 text-sm md:text-base text-center md:text-left"
+            >
+              <div>
+                <p class="font-semibold text-lg md:text-2xl inter">
+                  DR. LUCAS SPEGIORIN
+                </p>
+                <p class="uppercase text-sm text-gray-300 inter">
+                  Otorrinolaringologista – CRM/MG XXXXX | RQE XXXXX
+                </p>
+              </div>
+              <p class="inter text-base">
+                Graduado em Medicina pela [Nome da Universidade] e especialista
+                em Otorrinolaringologia, Dr. Lucas dedica sua carreira ao
+                diagnóstico e tratamento clínico e cirúrgico de doenças nasais.
+              </p>
+              <p class="inter">
+                Com sólida formação e mais de [X anos] de experiência, atua em
+                casos de desvio de septo, rinite, ronco, apneia do sono e
+                cirurgias funcionais do nariz. Seu atendimento é marcado pela
+                precisão técnica e pelo cuidado individualizado.
+              </p>
+            </div>
+
+            <div class="mx-auto text-center md:text-left">
+              <button
+                class="mt-6 px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition inter mx-auto justify-center items-center"
+              >
+                Agendar avaliação
+              </button>
+            </div>
+            <!-- Botão -->
+          </div>
+        </div>
+
+        <!-- CARROSSEL COM ICONES -->
+        <div class="mt-10 flex justify-center gap-4 relative py-10 md:py-0">
+          <img
+            src="assets/face-lucas.svg"
+            alt="Dr. Lucas"
+            class="w-24 h-24 rounded-full border-2 border-white cursor-pointer hover:scale-105 transition md:absolute md:bottom-24 md:right-[80%] z-10"
+            onclick="setDoctor(0)"
+          />
+          <img
+            src="assets/outro-doctor.svg"
+            alt="Dr. Rafael"
+            class="w-24 h-24 rounded-full border-2 border-white cursor-pointer hover:scale-105 transition md:absolute md:bottom-24 md:right-[73%] z-10"
+            onclick="setDoctor(1)"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 md:px-20 bg-white text-[#003366]">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
+        <!-- ESQUERDA: TÍTULO + TEXTO -->
+        <div class="md:col-span-2 space-y-6">
+          <h2 class="text-4xl md:text-5xl font-light leading-tight bianca">
+            <span class="block">RESPIRAR BEM</span>
+            <span class="block font-medium">É VIVER MELHOR.</span>
+          </h2>
+          <p class="text-base md:text-lg text-[#003366] max-w-xl inter">
+            A saúde nasal interfere diretamente no sono, no bem-estar e na
+            qualidade de vida. Aqui, cada diagnóstico é feito com atenção à
+            causa real do problema — para que o tratamento seja mais eficiente e
+            duradouro.
+          </p>
+        </div>
+
+        <!-- DIREITA: TÍTULO MENOR -->
+        <div class="hidden md:flex justify-end relative">
+          <p
+            class="uppercase tracking-widest text-2xl text-right absolute top-32 inter"
+          >
+            RESPIRAR BEM É <br />
+            VIVER MELHOR.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARROSSEL -->
+      <div class="mt-14 max-w-7xl mx-auto">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- CARD 1 -->
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">
+                Rinite e sinusite crônicas
+              </p>
+            </div>
+            <!-- CARD 2 -->
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">Obstrução nasal</p>
+            </div>
+            <!-- CARD 3 -->
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">Desvio de septo</p>
+            </div>
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">
+                Rinite e sinusite crônicas
+              </p>
+            </div>
+            <!-- CARD 2 -->
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">Obstrução nasal</p>
+            </div>
+            <!-- CARD 3 -->
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">Desvio de septo</p>
+            </div>
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">
+                Rinite e sinusite crônicas
+              </p>
+            </div>
+            <!-- CARD 2 -->
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">Obstrução nasal</p>
+            </div>
+            <!-- CARD 3 -->
+            <div
+              class="swiper-slide bg-gray-200 aspect-square flex items-end p-4 text-[#003366]"
+            >
+              <p class="text-sm font-medium inter">Desvio de septo</p>
+            </div>
+          </div>
+
+          <!-- INDICADORES -->
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 md:px-20 bg-white text-[#003366]">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
+        <!-- ESQUERDA: TÍTULO + TEXTO -->
+        <div class="md:col-span-2 space-y-6">
+          <h2
+            class="text-4xl md:text-5xl font-light leading-tight uppercase bianca"
+          >
+            <span class="block">Rinoplastia com</span>
+            <span class="block font-medium">naturalidade e precisão.</span>
+          </h2>
+          <p class="text-base md:text-lg text-[#003366] max-w-xl inter">
+            A rinoplastia deve valorizar o conjunto do rosto, respeitando a
+            anatomia, o desejo do paciente e os limites técnicos do
+            procedimento.
+          </p>
+          <p class="text-base md:text-lg text-[#003366] max-w-xl inter">
+            Na NASO, o planejamento é feito de forma detalhada e personalizada —
+            com foco em resultados sutis, equilibrados e seguros.
+          </p>
+        </div>
+
+        <!-- DIREITA: TÍTULO MENOR -->
+        <div class="hidden md:flex justify-end relative">
+          <p
+            class="uppercase tracking-widest text-2xl text-right absolute top-32 inter"
+          >
+            RESPIRAR BEM É <br />
+            VIVER MELHOR.
+          </p>
+          <a
+            href="#avaliacao"
+            class="bg-[#082F51] text-white px-6 py-2 rounded-full font-medium transition absolute top-56 inter"
+          >
+            Agendar avaliação
+          </a>
+        </div>
+      </div>
+
+      <!-- CARROSSEL -->
+      <div class="mt-14 max-w-7xl mx-auto">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <!-- CARD 1 -->
+            <div class="swiper-slide">
+              <img src="assets/image-aspect.png" alt="" />
+              <p class="mt-10 text-xl inter">Avaliação apronfudada</p>
+            </div>
+            <!-- CARD 2 -->
+            <div class="swiper-slide">
+              <img src="assets/image-aspect.png" alt="" />
+              <p class="mt-10 text-xl inter">Planejamento individualizado</p>
+            </div>
+            <!-- CARD 3 -->
+            <div class="swiper-slide">
+              <img src="assets/image-aspect.png" alt="" />
+              <p class="mt-10 text-xl inter">Técnicas modernas e seguras</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image-aspect.png" alt="" />
+              <p class="mt-10 text-xl inter">Acompanhemento completo</p>
+            </div>
+          </div>
+
+          <!-- INDICADORES -->
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 px-6 md:px-20">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Imagem ou vídeo à esquerda -->
+        <div class="w-full h-full">
+          <img src="assets/image.png" alt="" />
+        </div>
+        <!-- Substitua por <img> ou vídeo se quiser -->
+
+        <!-- Conteúdo à direita -->
+        <div>
+          <h2
+            class="text-3xl md:text-6xl font-light leading-tight text-[#082F51] bianca"
+          >
+            <span class="block">AMBIENTE</span>
+            <span class="block">PENSADO</span>
+            <span class="block font-semibold">PARA ACOLHER</span>
+          </h2>
+
+          <p class="mt-6 text-[#082F51] leading-relaxed inter">
+            Nossa estrutura foi planejada para garantir conforto, discrição e
+            tranquilidade.
+            <br /><br />
+            Localizada em Patos de Minas, a Clínica NASO une tecnologia e
+            bem-estar em cada detalhe do atendimento.
+          </p>
+          <ul class="mt-10 text-[#082F51] font-bold inter">
+            <li>– Ambientes climatizados e privativos</li>
+            <li>– Equipamentos de última geração</li>
+            <li>– Sala de procedimentos</li>
+            <li>– Atendimento com hora marcada</li>
+            <li>– Localização central e fácil acesso</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cards abaixo -->
+      <div class="mt-16 md:mt-48 flex justify-center gap-4 mx-auto items-end">
+        <div class="">
+          <img src="assets/retangulo.png" class="h-full w-full" alt="" />
+        </div>
+
+        <div class="">
+          <img src="assets/retangulo2.png" class="h-full w-full" alt="" />
+        </div>
+
+        <div class="">
+          <img src="assets/retangulo2.png" class="h-full w-full" alt="" />
+        </div>
+
+        <div class="">
+          <img src="assets/retangulo2.png" class="h-full w-auto" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#0f2753] py-12 px-6 md:px-12">
+      <div class="max-w-2xl mx-auto text-white">
+        <!-- Nota e Estrelas -->
+        <div class="flex items-center gap-2 mb-4">
+          <!-- Estrelas -->
+          <div class="flex text-orange-400 text-4xl">
+            ★ ★ ★ ★ <span class="text-gray-400">★</span>
+          </div>
+          <span class="text-white text-xl font-semibold">4.9</span>
+        </div>
+
+        <!-- Texto -->
+        <p class="text-gray-300 mb-6 text-xl inter">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa
+          ipsum, posuere eu erat id, aliquet pulvinar lectus. Cras arcu velit,
+          ultricies ut faucibus non, tempor sit amet nisi. Quisque sagittis
+          libero at risus molestie, ut mollis lacus auctor. Nullam sagittis
+          massa nec elit molestie, id rhoncus arcu euismod.
+        </p>
+
+        <!-- Autor -->
+        <div class="flex items-center gap-4">
+          <div class="w-20 h-20 rounded-full bg-gray-400"></div>
+          <div>
+            <p class="font-medium text-xl text-white inter">Leci Brandão</p>
+            <p class="text-sm italic text-gray-400 inter">Paciente Naso</p>
+          </div>
+        </div>
+
+        <!-- Indicadores (bolinhas) -->
+        <div class="flex gap-2 mt-6 justify-start">
+          <span class="w-20 h-[4px] bg-gray-300 rounded-full"></span>
+          <span class="w-10 h-[2px] bg-gray-400 rounded-full"></span>
+          <span class="w-10 h-[2px] bg-gray-500 rounded-full"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative md:w-full md:mb-10 h-screen overflow-hidden">
+      <!-- Vídeo de fundo -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute top-0 left-0 md:p-20 w-full h-full object-cover z-0"
+      >
+        <source src="assets/bg-lp.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeos em HTML5.
+      </video>
+
+      <!-- Overlay escuro -->
+      <div class="absolute inset-0 bg-black bg-opacity-60 md:hidden"></div>
+
+      <!-- Conteúdo -->
+      <div
+        class="relative z-20 flex flex-col items-center justify-center text-center text-white h-full px-6"
+      >
+        <!-- Logo -->
+        <img src="assets/logo.svg" alt="Logo NASO" class="mb-4 w-20" />
+
+        <!-- Subtítulo -->
+        <p class="uppercase text-sm tracking-widest mb-2 inter">
+          Seu nariz tratado com excelência.
+        </p>
+
+        <!-- Título -->
+        <h2
+          class="text-4xl md:text-7xl font-semibold leading-tight mb-4 bianca"
+        >
+          <span class="tracking-wider">AGENDE SUA AVALIAÇÃO.</span>
+        </h2>
+
+        <!-- Descrição -->
+        <p class="text-gray-200 max-w-xl mb-2 text-sm md:text-base inter">
+          Seja para respirar melhor ou transformar a estética do seu nariz com
+          segurança, a equipe da Clínica NASO está pronta para te receber.
+        </p>
+        <p class="text-gray-400 text-sm mb-6 inter">
+          Clique no botão abaixo e fale com nossa equipe.
+        </p>
+
+        <!-- Botão CTA -->
+        <a
+          href="#formulario"
+          class="inline-block bg-[#00447b] hover:bg-[#005a9e] transition-colors px-6 py-3 rounded-full text-white font-medium text-sm md:text-base inter"
+        >
+          Agendar avaliação
+        </a>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const doctors = [
+        {
+          name: "DR. LUCAS SPEGIORIN",
+          title: "Otorrinolaringologista – CRM/MG XXXXX | RQE XXXXX",
+          img: "assets/lucas.png",
+          desc1:
+            "Graduado em Medicina pela [Nome da Universidade] e especialista em Otorrinolaringologia, Dr. Lucas dedica sua carreira ao diagnóstico e tratamento clínico e cirúrgico de doenças nasais.",
+          desc2:
+            "Com sólida formação e mais de [X anos] de experiência, atua em casos de desvio de septo, rinite, ronco, apneia do sono e cirurgias funcionais do nariz. Seu atendimento é marcado pela precisão técnica e pelo cuidado individualizado.",
+        },
+        {
+          name: "DR. RAFAEL SILVA",
+          title: "Otorrinolaringologista – CRM/MG YYYY | RQE YYYY",
+          img: "assets/lucas.png",
+          desc1:
+            "Graduado em Medicina pela [Outra Universidade], Dr. Rafael é especialista em cirurgias estéticas e funcionais do nariz, com foco em resultados naturais.",
+          desc2:
+            "Possui vasta experiência em rinoplastia, sinusite crônica e reabilitação respiratória. Seu trabalho é reconhecido pelo equilíbrio entre estética e saúde funcional.",
+        },
+      ];
+
+      function setDoctor(index) {
+        const doc = doctors[index];
+        document.getElementById("doctor-image").innerHTML =
+          `<img src="${doc.img}" class="w-full object-cover h-full rounded-lg transition-all duration-300">`;
+        document.getElementById("doctor-info").innerHTML = `
+      <div>
+        <p class="font-semibold text-lg inter">${doc.name}</p>
+        <p class="uppercase text-sm text-gray-300 inter">${doc.title}</p>
+      </div>
+      <p>${doc.desc1}</p>
+      <p>${doc.desc2}</p>
+    `;
+      }
+    </script>
+
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      const swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
