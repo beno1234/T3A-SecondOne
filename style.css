@@ -19,8 +19,8 @@
 }
 
 @font-face {
-  font-family: "bianca";
-  src: url(fonts/bianca-font-duo/bianca-sans.otf);
+  font-family: "garet";
+  src: url(fonts/garet/Garet-Book.woff2);
 }
 
 @font-face {
@@ -29,9 +29,47 @@
 }
 
 .bianca {
-  font-family: "bianca", sans-serif;
+  font-family: "garet", sans-serif;
 }
 
 .inter {
   font-family: "inter", sans-serif;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-linear {
+  animation: scroll 15s linear infinite;
+}
+@keyframes rotateInfinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-infinite {
+  animation: rotateInfinite 60s linear infinite;
+}
+
+@keyframes loader-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-loader-bar {
+  animation: loader-bar 2s linear infinite;
 }

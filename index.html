@@ -3,16 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naso LP</title>
+    <title>T3A</title>
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="icon" type="image/x-icon" href="assets/logo-red.png" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div
+      id="ai-loader"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-[#000d24] text-white"
+    >
+      <div class="flex flex-col items-center">
+        <!-- Logo ou ícone -->
+        <div class="relative w-16 h-16 mb-6">
+          <div
+            class="absolute inset-0 animate-ping rounded-full bg-blue-500 opacity-75"
+          ></div>
+          <div
+            class="relative z-10 w-full h-full bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg"
+          >
+            IA
+          </div>
+        </div>
+
+        <!-- Texto animado -->
+        <div
+          class="text-lg font-semibold tracking-widest uppercase animate-pulse mb-2"
+        >
+          Carregando Inteligência
+        </div>
+
+        <!-- Barra futurista -->
+        <div class="w-64 h-2 bg-gray-800 rounded-full overflow-hidden">
+          <div
+            class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 animate-loader-bar"
+          ></div>
+        </div>
+      </div>
+    </div>
     <header class="relative h-screen overflow-hidden">
       <video
         autoplay
@@ -21,7 +59,7 @@
         playsinline
         class="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="assets/bg-lp.mp4" type="video/mp4" />
+        <source src="assets/x.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo em background.
       </video>
 
@@ -31,36 +69,45 @@
         class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4"
       >
         <!-- Logo -->
-        <img src="assets/logo.svg" alt="Logo Naso" class="w-auto mb-4" />
+        <img
+          src="assets/logo-red.png"
+          width="100"
+          alt="Logo Naso"
+          class="mb-4"
+        />
 
         <!-- Texto pequeno -->
-        <p class="uppercase text-sm tracking-widest mb-10 text-white">
-          cuidado com excelência
+        <p
+          class="uppercase text-sm tracking-widest mb-10 text-white"
+          data-aos="fade-up"
+        >
+          Automatize suas vendas
         </p>
 
         <!-- Título -->
         <h1
           class="text-4xl md:text-7xl font-light leading-tight mb-10 text-white bianca"
         >
-          <span class="block">Função e Forma</span>
-          <span class="block">em Equilíbrio</span>
+          <span class="block">Humanidade e Tecnologia</span>
+          <span class="block">em Harmonia</span>
         </h1>
 
         <!-- Parágrafo -->
         <p class="text-sm md:text-base max-w-2xl mb-6 text-[#FFF] inter">
-          Na Clínica NASO, oferecemos cuidados completos em otorrinolaringologia
-          e rinoplastia. Uma experiência médica que une ciência, estética e
-          resultados naturais.
+          Somos a T3A — um movimento para PMEs que buscam liberdade, escala e
+          vendas no piloto automático com inteligência artificial.
         </p>
 
         <!-- Botão -->
-        <a
-          href="https://wa.me/5532992410911?text=Gostaria%20de%20agendar%20uma%20consulta%2C%20poderia%20me%20ajudar%20%3F"
-          target="_blank"
-          class="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition inter"
-        >
-          Agendar avaliação
-        </a>
+        <div class="flex md:flex-wrap gap-6">
+          <a
+            href="#"
+            target="_blank"
+            class="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition inter"
+          >
+            Quero conversar com a Trinity agora
+          </a>
+        </div>
 
         <!-- Ícone rolar para baixo -->
         <div class="mt-10 animate-bounce">
@@ -91,34 +138,31 @@
     <section class="bg-white py-16 px-6 md:px-20">
       <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <!-- Imagem ou vídeo à esquerda -->
-        <div class="w-full h-full">
-          <img src="assets/nariz.png" alt="" />
+        <div class="w-full h-full" data-aos="flip-left">
+          <img src="assets/men.jpg" alt="" />
         </div>
         <!-- Substitua por <img> ou vídeo se quiser -->
 
         <!-- Conteúdo à direita -->
-        <div>
+        <div data-aos="fade-up">
           <h2
-            class="text-3xl md:text-6xl font-light leading-tight text-[#082F51] bianca"
+            class="text-3xl md:text-5xl font-light leading-tight text-[#1e4b8f] bianca"
           >
             <span class="block">ESPECIALISTAS</span>
-            <span class="block font-semibold">EM SAÚDE NASAL</span>
+            <span class="block font-semibold">EM AUTOMAÇÃO DE VENDAS</span>
           </h2>
 
-          <h3 class="mt-4 text-lg md:text-3xl font-medium text-[#082F51] inter">
-            REFERÊNCIA EM <span class="font-bold">PATOS DE MINAS.</span>
-          </h3>
-
-          <p class="mt-6 text-[#082F51] leading-relaxed inter">
-            A NASO é uma clínica dedicada exclusivamente ao nariz — sua
-            estrutura, sua função, sua estética.
+          <p class="mt-6 text-[#1e4b8f] leading-relaxed inter">
+            A T3A é uma empresa focada em potencializar negócios por meio da
+            automação inteligente — sua estrutura, sua estratégia, seu
+            crescimento.
             <br /><br />
-            Unimos tecnologia, atendimento acolhedor e dois médicos
-            especialistas que tratam cada caso com precisão e escuta.
+            Unimos tecnologia, atendimento humanizado e uma IA treinada para
+            gerar leads qualificados, acelerar vendas e liberar tempo para o que
+            realmente importa: a gestão.
             <br /><br />
-            Nossa missão é proporcionar bem-estar, respiração de qualidade e
-            resultados estéticos naturais, respeitando o que torna cada paciente
-            único.
+            Nossa missão é oferecer liberdade, escala e resultados reais para
+            pequenas e médias empresas, respeitando a essência de cada negócio.
           </p>
         </div>
       </div>
@@ -127,39 +171,57 @@
       <div
         class="mt-16 md:mt-48 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto"
       >
-        <div class="border rounded-lg p-6 text-center md:text-left">
-          <p class="text-sm md:text-2xl font-semibold text-gray-400 mb-2 inter">
+        <div
+          class="border rounded-lg p-6 text-center md:text-left"
+          data-aos="flip-left"
+          data-aos-delay="0"
+        >
+          <p
+            class="text-sm md:text-2xl font-semibold text-[#4bc4f2] mb-2 inter"
+          >
             01.
           </p>
-          <h4 class="text-lg font-semibold text-gray-800 inter">
+          <h4 class="text-lg font-semibold text-[#1e4b8f] inter">
             Experiência e inovação
           </h4>
           <p class="mt-2 text-sm md:text-base text-gray-600">
-            Técnicas avançadas aliadas a décadas de expertise
+            Responde 100% dos leads em até 7s, sem sobrecarregar a equipe.
           </p>
         </div>
 
-        <div class="border rounded-lg p-6 text-center md:text-left">
-          <p class="text-sm md:text-2xl font-semibold text-gray-400 mb-2 inter">
+        <div
+          class="border rounded-lg p-6 text-center md:text-left"
+          data-aos="flip-left"
+          data-aos-delay="150"
+        >
+          <p
+            class="text-sm md:text-2xl font-semibold text-[#4bc4f2] mb-2 inter"
+          >
             02.
           </p>
-          <h4 class="text-lg font-semibold text-gray-800 inter">
+          <h4 class="text-lg font-semibold text-[#1e4b8f] inter">
             Atendimento personalizado
           </h4>
           <p class="mt-2 text-sm md:text-base text-gray-600">
-            Cuidado único, pensado exclusivamente para você
+            Fecha vendas com abordagens inteligentes e fala com voz humana.
           </p>
         </div>
 
-        <div class="border rounded-lg p-6 text-center md:text-left">
-          <p class="text-sm md:text-2xl font-semibold text-gray-400 mb-2 inter">
+        <div
+          class="border rounded-lg p-6 text-center md:text-left"
+          data-aos="flip-left"
+          data-aos-delay="300"
+        >
+          <p
+            class="text-sm md:text-2xl font-semibold text-[#4bc4f2] mb-2 inter"
+          >
             03.
           </p>
-          <h4 class="text-lg font-semibold text-gray-800 inter">
+          <h4 class="text-lg font-semibold text-[#1e4b8f] inter">
             Resultados naturais
           </h4>
           <p class="mt-2 text-sm md:text-base text-gray-600">
-            Harmonia e equilíbrio em cada procedimento
+            Transforma interações simples em conversões reais – dia e noite.
           </p>
         </div>
       </div>
@@ -168,86 +230,87 @@
     <section class="py-20">
       <div class="bg-gradient-to-b from-black to-[#0d1c2e] text-white">
         <div class="mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <!-- IMAGEM DO MÉDICO -->
           <div
             id="doctor-image"
             class="w-full rounded-lg overflow-hidden relative"
+            data-aos="flip-right"
+            data-aos-delay="450"
           >
             <img
-              src="assets/lucas.png"
-              alt="Dr. Lucas"
+              src="assets/fernando.webp"
+              alt="Fernando"
               class="w-full object-cover h-full rounded-lg transition-all duration-300"
             />
-            <div
-              class="absolute bottom-0 left-0 w-full h-80 rounded-b-lg bg-gradient-to-t from-white/80 to-transparent backdrop-blur-sm pointer-events-none hidden md:flex"
-            ></div>
           </div>
 
-          <!-- INFORMAÇÕES -->
-          <div class="">
+          <div class="" data-aos="fade-up">
             <h2
-              class="md:text-8xl font-light leading-snug bianca text-center text-5xl"
+              class="md:text-5xl font-light leading-snug bianca text-5xl"
+              data-aos="fade-up"
+              data-aos-delay="450"
             >
-              <span class="block">QUEM CUIDA</span>
-              <span class="block font-semibold">DE VOCÊ</span>
+              <span class="block">As Mentes por Trás da</span>
+              <span class="block font-semibold">Tecnologia</span>
             </h2>
 
             <div
               id="doctor-info"
+              data-aos="fade-up"
+              data-aos-delay="450"
               class="mt-6 space-y-4 px-2 text-sm md:text-base text-center md:text-left"
             >
-              <div>
+              <div data-aos="fade-up" data-aos-delay="450">
                 <p class="font-semibold text-lg md:text-2xl inter">
-                  Dr. Juliano Spegiorin
-                </p>
-                <p class="uppercase text-sm text-gray-300 inter">
-                  Otorrinolaringologista | 28 anos de experiência
+                  Fernando Gusmão é Co-Fundador e CFO da T3A.
                 </p>
               </div>
-              <p class="inter text-base">
-                Com uma trajetória marcada pela dedicação e expertise, o Dr.
-                Juliano Spegiorin é referência em otorrinolaringologia e
-                cirurgias plásticas da face. Formado pela Universidade Federal
-                de Uberlândia (UFU), especializou-se em cirurgia de cabeça e
-                pescoço, com ênfase em rinoplastia e otoplastia.
-              </p>
-              <p class="inter">
-                Consolidou sua carreira no Hospital Vera Cruz, participou de
-                congressos internacionais e tornou-se palestrante reconhecido em
-                sua área. Agora, na Clínica NASO, une toda essa experiência a um
-                atendimento personalizado, oferecendo tratamentos inovadores e
-                resultados naturais, sempre com excelência e comprometimento.
+              <p
+                class="inter text-base"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
+                Sua expertise em gestão e liderança é um dos pilares que
+                sustenta o crescimento do Movimento, garantindo que as entregas
+                da T3A sejam escaláveis e ofereçam valor duradouro aos nossos
+                clientes.
               </p>
             </div>
 
-            <div class="mx-auto text-center md:text-left">
+            <div
+              class="mx-auto text-center md:text-left"
+              data-aos="fade-right"
+              data-aos-delay="450"
+            >
               <button
                 class="mt-6 px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition inter mx-auto justify-center items-center"
               >
                 <a
                   href="https://wa.me/5532992410911?text=Gostaria%20de%20agendar%20uma%20consulta%2C%20poderia%20me%20ajudar%20%3F"
                   target="_blank"
+                  id="link"
                 >
                   Agendar avaliação</a
                 >
               </button>
             </div>
-            <!-- Botão -->
           </div>
         </div>
 
-        <!-- CARROSSEL COM ICONES -->
-        <div class="mt-10 flex justify-center gap-4 relative py-10 md:py-0">
+        <div
+          class="mt-10 flex justify-center gap-4 relative py-10 md:py-0"
+          data-aos="fade-up"
+          data-aos-delay="450"
+        >
           <img
-            src="assets/face-lucas.svg"
+            src="assets/fernando.webp"
             alt="Dr. Lucas"
-            class="w-24 h-24 rounded-full border-2 border-white cursor-pointer hover:scale-105 transition md:absolute md:bottom-24 md:right-[80%] z-10"
+            class="w-16 h-16 rounded-full border-2 border-white cursor-pointer hover:scale-105 transition md:absolute md:bottom-24 md:right-[80%] z-10"
             onclick="setDoctor(0)"
           />
           <img
-            src="assets/outro-doctor.svg"
+            src="assets/joao.webp"
             alt="Dr. Rafael"
-            class="w-24 h-24 rounded-full border-2 border-white cursor-pointer hover:scale-105 transition md:absolute md:bottom-24 md:right-[73%] z-10"
+            class="w-16 h-16 rounded-full border-2 border-white cursor-pointer hover:scale-105 transition md:absolute md:bottom-24 md:right-[73%] z-10"
             onclick="setDoctor(1)"
           />
         </div>
@@ -257,56 +320,80 @@
     <section class="py-16 px-6 md:px-20 bg-white text-[#003366]">
       <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
         <!-- ESQUERDA: TÍTULO + TEXTO -->
-        <div class="md:col-span-2 space-y-6">
+        <div
+          class="md:col-span-2 space-y-6"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h2 class="text-4xl md:text-5xl font-light leading-tight bianca">
-            <span class="block">RESPIRAR BEM</span>
-            <span class="block font-medium">É VIVER MELHOR.</span>
+            <span class="block uppercase">Menos operação</span>
+            <span class="block font-medium uppercase">Mais direção.</span>
           </h2>
           <p class="text-base md:text-lg text-[#003366] max-w-xl inter">
-            A saúde nasal interfere diretamente no sono, no bem-estar e na
-            qualidade de vida. Aqui, cada diagnóstico é feito com atenção à
-            causa real do problema — para que o tratamento seja mais eficiente e
-            duradouro.
+            Com a T3A, sua empresa automatiza o atendimento, filtra os leads
+            certos e transforma o WhatsApp em uma máquina de vendas — tudo isso
+            com inteligência artificial que aprende com o seu negócio.
           </p>
         </div>
 
         <!-- DIREITA: TÍTULO MENOR -->
-        <div class="hidden md:flex justify-end relative">
+        <div
+          class="hidden md:flex justify-end relative"
+          data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
           <p
             class="uppercase tracking-widest text-2xl text-right absolute top-32 inter"
           >
-            RESPIRAR BEM É <br />
-            VIVER MELHOR.
+            Variante mais <br />
+            explicativa e direta.
           </p>
         </div>
       </div>
 
       <!-- CARROSSEL -->
-      <div class="mt-14 max-w-7xl mx-auto">
+      <div
+        class="mt-14 max-w-7xl mx-auto"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <!-- CARD 1 -->
             <div
-              class="swiper-slide relative aspect-square flex items-end p-4 text-white rounded-lg overflow-hidden"
+              class="swiper-slide relative aspect-square grid items-end p-4 text-white rounded-lg overflow-hidden"
               style="
-                background-image: url(assets/rinite.png);
+                background-image: url(assets/secretaria.webp);
                 background-size: cover;
                 background-position: center;
               "
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
             >
               <!-- Camada escura para legibilidade -->
               <div class="absolute inset-0 bg-black/40"></div>
 
               <!-- Conteúdo do card -->
               <p class="relative z-10 text-sm font-medium inter">
-                Rinite e sinusite crônicas
+                Secretária Humanizada
+              </p>
+              <p class="relative z-10 text-sm font-medium inter">
+                A Trinity agenda reuniões e consultas automaticamente, sem a
+                necessidade de intervenção humana, por meio de nossas
+                integrações com calendários empresariais.
               </p>
             </div>
             <!-- CARD 2 -->
             <div
-              class="swiper-slide relative aspect-square flex items-end p-4 text-white rounded-lg overflow-hidden"
+              class="swiper-slide relative aspect-square grid items-end p-4 text-white rounded-lg overflow-hidden"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
               style="
-                background-image: url(assets/nasal.png);
+                background-image: url(assets/sdr.webp);
                 background-size: cover;
                 background-position: center;
               "
@@ -316,14 +403,22 @@
 
               <!-- Conteúdo do card -->
               <p class="relative z-10 text-sm font-medium inter">
-                Obstrução nasal
+                Atendente SDR
+              </p>
+              <p class="relative z-10 text-sm font-medium inter">
+                A Trinity qualifica os seus leads com base em perguntas
+                estratégicas, adaptando a comunicação para cada cliente e
+                suprindo toda a demanda de atendimento.
               </p>
             </div>
             <!-- CARD 3 -->
             <div
-              class="swiper-slide relative aspect-square flex items-end p-4 text-white rounded-lg overflow-hidden"
+              class="swiper-slide relative aspect-square grid items-end p-4 text-white rounded-lg overflow-hidden"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
               style="
-                background-image: url(assets/desvio.png);
+                background-image: url(assets/vendedora.webp);
                 background-size: cover;
                 background-position: center;
               "
@@ -333,20 +428,171 @@
 
               <!-- Conteúdo do card -->
               <p class="relative z-10 text-sm font-medium inter">
-                Desvio de septo
+                Vendedora /Closer
+              </p>
+              <p class="relative z-10 text-sm font-medium inter">
+                A Trinity atua diretamente no fechamento de vendas, guiando os
+                leads maneira personalizada até a finalização da compra.
+              </p>
+            </div>
+            <div
+              class="swiper-slide relative aspect-square grid items-end p-4 text-white rounded-lg overflow-hidden"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              style="
+                background-image: url(assets/customizacao.webp);
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <!-- Camada escura para legibilidade -->
+              <div class="absolute inset-0 bg-black/40"></div>
+
+              <!-- Conteúdo do card -->
+              <p class="relative z-10 text-sm font-medium inter pb-10">
+                Customização Completa
+              </p>
+              <p class="relative z-10 text-sm font-medium inter">
+                Personalize a IA com a identidade visual da sua marca e o nome
+                que preferir.
               </p>
             </div>
           </div>
 
-          <!-- INDICADORES -->
           <div class="swiper-pagination mt-6"></div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 px-6 md:px-20 bg-white text-[#003366]">
+    <section
+      class="text-center py-48 bg-gradient-to-b from-black to-[#0d1c2e] overflow-hidden"
+    >
+      <div
+        class="mx-auto"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <h2 class="text-white font-bold text-2xl mb-20">
+          Algumas empresas que confiam na T3A
+        </h2>
+      </div>
+
+      <div
+        class="mx-auto container overflow-hidden"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div class="flex scroll-linear w-max">
+          <!-- Primeira sequência -->
+          <img
+            src="assets/carrossel/ecl-conecta.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/energy-solar.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/ensino.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/fiber.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/finance.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/lameds.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/life.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/oswaldo-cruz.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/rafael.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/superflow.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+
+          <!-- Segunda sequência (duplicada) -->
+          <img
+            src="assets/carrossel/ecl-conecta.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/energy-solar.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/ensino.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/fiber.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/finance.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/lameds.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/life.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/oswaldo-cruz.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/rafael.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+          <img
+            src="assets/carrossel/superflow.webp"
+            class="mx-6 h-[68px] object-contain"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="py-16 px-6 md:px-20 bg-white text-[#003366]">
       <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
-        <!-- ESQUERDA: TÍTULO + TEXTO -->
         <div class="md:col-span-2 space-y-6">
           <h2
             class="text-4xl md:text-5xl font-light leading-tight uppercase bianca"
@@ -365,7 +611,6 @@
           </p>
         </div>
 
-        <!-- DIREITA: TÍTULO MENOR -->
         <div class="hidden md:flex justify-end relative">
           <p
             class="uppercase tracking-widest text-2xl text-right absolute top-32 inter"
@@ -373,31 +618,20 @@
             RESPIRAR BEM É <br />
             VIVER MELHOR.
           </p>
-          <a
-            href="https://wa.me/5532992410911?text=Gostaria%20de%20agendar%20uma%20consulta%2C%20poderia%20me%20ajudar%20%3F"
-            target="_blank"
-            class="bg-[#082F51] text-white px-6 py-2 rounded-full font-medium transition absolute top-56 inter"
-          >
-            Agendar avaliação
-          </a>
         </div>
       </div>
 
-      <!-- CARROSSEL -->
       <div class="mt-14 max-w-7xl mx-auto">
         <div class="swiper mySwiper2">
           <div class="swiper-wrapper">
-            <!-- CARD 1 -->
             <div class="swiper-slide">
               <img src="assets/avaliacao.png" alt="" />
               <p class="mt-10 text-xl inter">Avaliação aprofundada</p>
             </div>
-            <!-- CARD 2 -->
             <div class="swiper-slide">
               <img src="assets/planejamento.png" alt="" />
               <p class="mt-10 text-xl inter">Planejamento individualizado</p>
             </div>
-            <!-- CARD 3 -->
             <div class="swiper-slide">
               <img src="assets/tecnicas.png" alt="" />
               <p class="mt-10 text-xl inter">Técnicas modernas e seguras</p>
@@ -408,55 +642,49 @@
             </div>
           </div>
 
-          <!-- INDICADORES -->
           <div class="swiper-pagination mt-6"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="bg-white py-16 px-6 md:px-20">
       <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <!-- Imagem ou vídeo à esquerda -->
-        <div class="w-full h-full">
-          <img src="assets/naso.png" alt="" />
+        <div
+          class="w-full h-full"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="assets/futuristic.webp" alt="" />
         </div>
-        <!-- Substitua por <img> ou vídeo se quiser -->
 
-        <!-- Conteúdo à direita -->
-        <div>
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <h2
-            class="text-3xl md:text-6xl font-light leading-tight text-[#082F51] bianca"
+            class="text-3xl md:text-3xl font-light leading-tight text-[#1e4b8f] bianca"
           >
-            <span class="block">AMBIENTE</span>
-            <span class="block">PENSADO</span>
-            <span class="block font-semibold">PARA ACOLHER</span>
+            Fale agora com um dos nossos especialistas para testar o software.
           </h2>
 
-          <p class="mt-6 text-[#082F51] leading-relaxed inter">
-            Nossa estrutura foi planejada para garantir conforto, discrição e
-            tranquilidade.
+          <p class="mt-6 text-[#1e4b8f] leading-relaxed inter">
+            Clique no botão abaixo e fale diretamente com a nossa IA para testar
+            o Sotware,
             <br /><br />
             Localizada em Patos de Minas, a Clínica NASO une tecnologia e
             bem-estar em cada detalhe do atendimento.
           </p>
-          <ul class="mt-10 text-[#082F51] font-bold inter">
-            <li>– Ambientes climatizados e privativos</li>
-            <li>– Equipamentos de última geração</li>
-            <li>– Sala de procedimentos</li>
-            <li>– Atendimento com hora marcada</li>
-            <li>– Localização central e fácil acesso</li>
+          <ul class="mt-10 text-[#1e4b8f] font-bold inter">
+            <li>
+              – Performance 24/7 – Aumente suas vendas com uma IA que nunca
+              descansa.
+            </li>
+            <li>
+              – Humanização Real – Uma experiência de atendimento próxima e
+              personalizada.
+            </li>
+            <li>
+              – Automação de Alto Impacto – Desde agendamentos até qualificações
+              de leads, tudo sem esforço manual.
+            </li>
           </ul>
-        </div>
-      </div>
-
-      <!-- Cards abaixo -->
-      <div class="mt-16 md:mt-20 flex justify-center gap-4 mx-auto items-end">
-        <div class="">
-          <img src="assets/cadeira.png" class="h-full w-full" alt="" />
-        </div>
-
-        <div class="">
-          <img src="assets/porta.png" class="h-full w-full" alt="" />
         </div>
       </div>
     </section>
@@ -494,7 +722,11 @@
       </div>
     </section> -->
 
-    <section class="relative md:w-full md:mb-10 h-screen overflow-hidden">
+    <section
+      class="relative md:w-full md:mb-10 h-screen overflow-hidden"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+    >
       <!-- Vídeo de fundo -->
       <video
         autoplay
@@ -503,7 +735,7 @@
         playsinline
         class="absolute top-0 left-0 md:p-20 w-full h-full object-cover z-0"
       >
-        <source src="assets/bg-lp.mp4" type="video/mp4" />
+        <source src="assets/x.mp4" type="video/mp4" />
         Seu navegador não suporta vídeos em HTML5.
       </video>
 
@@ -512,66 +744,123 @@
 
       <!-- Conteúdo -->
       <div
-        class="relative z-20 flex flex-col items-center justify-center text-center text-white h-full px-6"
+        class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
       >
         <!-- Logo -->
-        <img src="assets/logo.svg" alt="Logo NASO" class="mb-4 w-20" />
+        <img
+          src="assets/logo-red.png"
+          width="100"
+          alt="Logo Naso"
+          class="mb-4"
+        />
 
-        <!-- Subtítulo -->
-        <p class="uppercase text-sm tracking-widest mb-2 inter">
-          Seu nariz tratado com excelência.
+        <!-- Texto pequeno -->
+        <p class="uppercase text-sm tracking-widest mb-10 text-white">
+          Automatize suas vendas
         </p>
 
         <!-- Título -->
-        <h2
-          class="text-4xl md:text-7xl font-semibold leading-tight mb-4 bianca"
+        <h1
+          class="text-4xl md:text-7xl font-light leading-tight mb-10 text-white bianca"
         >
-          <span class="tracking-wider">AGENDE SUA AVALIAÇÃO.</span>
-        </h2>
+          <span class="block">Humanidade e Tecnologia</span>
+          <span class="block">em Harmonia</span>
+        </h1>
 
-        <!-- Descrição -->
-        <p class="text-gray-200 max-w-xl mb-2 text-sm md:text-base inter">
-          Seja para respirar melhor ou transformar a estética do seu nariz com
-          segurança, a equipe da Clínica NASO está pronta para te receber.
-        </p>
-        <p class="text-gray-400 text-sm mb-6 inter">
-          Clique no botão abaixo e fale com nossa equipe.
+        <!-- Parágrafo -->
+        <p class="text-sm md:text-base max-w-2xl mb-6 text-[#FFF] inter">
+          Somos a T3A — um movimento para PMEs que buscam liberdade, escala e
+          vendas no piloto automático com inteligência artificial.
         </p>
 
-        <!-- Botão CTA -->
-        <a
-          href="https://wa.me/5532992410911?text=Gostaria%20de%20agendar%20uma%20consulta%2C%20poderia%20me%20ajudar%20%3F"
-          target="_blank"
-          class="inline-block bg-[#00447b] hover:bg-[#005a9e] transition-colors px-6 py-3 rounded-full text-white font-medium text-sm md:text-base inter"
-        >
-          Agendar avaliação
-        </a>
+        <!-- Botão -->
+        <div class="flex md:flex-wrap gap-6" data-aos="zoom-out-left">
+          <a
+            href="#"
+            target="_blank"
+            class="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition inter"
+          >
+            Quero conversar com a Trinity agora
+          </a>
+        </div>
+
+        <!-- Ícone rolar para baixo -->
+        <div class="mt-10 animate-bounce" data-aos="zoom-out-right">
+          <a href="#conteudo">
+            <div
+              class="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
+    <a
+      href="https://wa.me/5532992410911?text=Gostaria%20de%20agendar%20uma%20consulta%2C%20poderia%20me%20ajudar%20%3F"
+      target="_blank"
+      class="fixed bottom-4 left-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300"
+    >
+      <i class="fab fa-whatsapp fa-lg"></i>
+    </a>
+
+    <button
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+      class="fixed bottom-4 right-4 bg-gray-800 hover:bg-gray-700 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
       const doctors = [
         {
-          name: "Dr. Juliano Spegiorin",
-          title: "Otorrinolaringologista | 28 anos de experiência",
-          img: "assets/lucas.png",
+          name: "Fernando Gusmão",
+          title: "é Co-Fundador e CFO da T3A",
+          img: "assets/fernando.webp",
           desc1:
-            "Formado pela Universidade Federal de Uberlândia (UFU), Dr. Juliano Spegiorin é referência em Otorrinolaringologia e cirurgias plásticas da face. Especializou-se em cirurgia de cabeça e pescoço, com ênfase em rinoplastia e otoplastia, dedicando sua carreira ao diagnóstico e tratamento clínico e cirúrgico com excelência e precisão.",
-          desc2:
-            "Com uma trajetória consolidada no Hospital Vera Cruz e participação em congressos internacionais como palestrante, une experiência e inovação na Clínica NASO. Seu atendimento personalizado abrange desde procedimentos funcionais até cirurgias estéticas, com foco em resultados naturais e cuidado individualizado.",
+            "Sua expertise em gestão e liderança é um dos pilares que sustenta o crescimento do Movimento, garantindo que as entregas da T3A sejam escaláveis e ofereçam valor duradouro aos nossos clientes.",
+          scheduleLink: "#",
         },
         {
-          name: "Dr. Lucas Spegiorin",
-          title:
-            "Otorrinolaringologista | Formação moderna e atendimento humanizado",
-          img: "assets/dr.png",
+          name: "João Victor Trindade",
+          title: "Co-Fundador e desenvolvedor da T3A.",
+          img: "assets/joao.webp",
           desc1:
-            "Formado pela Faculdade Ciências Médicas de Minas Gerais (FCMMG), Dr. Lucas Spegiorin representa a nova geração da Otorrinolaringologia. Com destaque como 1º lugar na prova unificada de Minas Gerais, garantiu sua residência na UFMG, onde se especializou em cirurgias endoscópicas nasais e plásticas da face.",
-          desc2:
-            "Na Clínica NASO, aplica técnicas modernas com precisão e um olhar atualizado sobre a especialidade. Seu atendimento une conhecimento técnico avançado e acolhimento, oferecendo tratamentos eficazes e resultados harmoniosos, sempre com foco no cuidado individualizado.",
+            "Une a sua mentalidade inovadora e ampla criatividade para desenvolver soluções por IA que beneficiarão a vida de milhares de brasileiros nos próximos 10 anos.",
+          scheduleLink: "#", // Link do Dr. Lucas
         },
       ];
 
@@ -579,17 +868,16 @@
         const doc = doctors[index];
         document.getElementById("doctor-image").innerHTML =
           `<img src="${doc.img}" class="w-full object-cover h-full rounded-lg transition-all duration-300">
-          <div
-              class="absolute bottom-0 left-0 w-full h-80 rounded-b-lg bg-gradient-to-t from-white/80 to-transparent backdrop-blur-sm pointer-events-none hidden md:flex"
-            ></div>`;
+             `;
         document.getElementById("doctor-info").innerHTML = `
-      <div>
-        <p class="font-semibold text-lg inter">${doc.name}</p>
-        <p class="uppercase text-sm text-gray-300 inter">${doc.title}</p>
-      </div>
-      <p>${doc.desc1}</p>
-      <p>${doc.desc2}</p>
-    `;
+           <div>
+             <p class="font-semibold text-lg inter">${doc.name}</p>
+             <p class="uppercase text-sm text-gray-300 inter">${doc.title}</p>
+           </div>
+           <p>${doc.desc1}</p>
+           <p>${doc.desc2}</p>
+         `;
+        document.getElementById("link").href = doc.scheduleLink;
       }
     </script>
 
@@ -603,7 +891,7 @@
         },
         breakpoints: {
           768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
         },
       });
@@ -622,6 +910,29 @@
             slidesPerView: 4,
           },
         },
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("ai-loader");
+
+        const minDuration = 4500;
+        const start = performance.now();
+
+        const finishLoading = () => {
+          const elapsed = performance.now() - start;
+          const delay = Math.max(minDuration - elapsed, 0);
+
+          setTimeout(() => {
+            loader.classList.add("opacity-0", "pointer-events-none");
+            setTimeout(() => loader.remove(), 700);
+          }, delay);
+        };
+
+        finishLoading();
       });
     </script>
   </body>
